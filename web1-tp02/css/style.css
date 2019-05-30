@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  width: 80%;
+}
+
+.tpContainer{
+  margin: 0 auto;
+}
+
+.darkDiv{
+  background-color: lightgrey;
+  border: 3px solid red;
+}
+
+.unhiddenDiv{
+  border: 1px solid grey;
+}
+
+.hiddenDiv{
+  visibility: hidden;
+}
