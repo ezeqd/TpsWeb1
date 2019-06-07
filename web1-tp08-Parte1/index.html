@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>TP02 jsParte1</title>
   </head>
 
@@ -19,9 +20,17 @@
       </ul>
     </div>
     <div class="tpContainer">
-      <div class="useAjax">        
+      <div class="row">
+        <div class="col">
+          <button class="partialLoad" type="button" name="btn-partial">Carga parcial</button>
+          <div class="useAjax">
+          </div>
+        </div>
+        <div class="col">
+          <button class="otherPartialLoad" type="button" name="btn-otherpartial">Otra carga</button>
+          <div class="otroAjax"></div>
+        </div>
       </div>
-      <button class="partialLoad" type="button" name="btn-partial">Carga parcial</button>
     </div>
   </div>
   <footer>
