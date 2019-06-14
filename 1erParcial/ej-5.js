@@ -7,18 +7,22 @@ let container = document.querySelector("divClima");
   "tempertaturas": 10,
   "unidad":"grados centigrados"
 }]*/
-// http://clima.com/api/:Tandil te devuelve las mediciones de Tandil
+// http://clima.com/api/Tandil te devuelve las mediciones de Tandil
 btnClima.addEventListener("click", ()=>getInfo(container) )
 
   async function getInfo(container){
-    let url = "http://clima.com/api/estaciones/personales/";
+    let url = "http://clima.com/api/Tandil/";
     try{
       let response = await fetch(url);
       if (response.ok){
         let t = await response.text();
-        arreglo[contador] = t;
-        container.innerHTML += arreglo[contador];
-        contador++;
+        let temperatura = 0;
+        let cant = 0;
+        for (let i of t ) {
+			temperatura += t[i].temperaturas;
+			cant++;
+		}
+        temperatura = temperatura / cant;
       }
       else {
         container.innerHTML = "<h1>Error - url fail!</h1>";
