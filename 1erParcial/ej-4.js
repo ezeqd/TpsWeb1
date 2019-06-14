@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     newItem.appendChild(newText);
     // Agrego el nuevo nodo a la lista
     commentList.appendChild(newItem);
-    // Agrego las clases para resaltar en rojo o verde, según calificación. 
-    if (userRate==1) {
+    // Agrego las clases para resaltar en rojo o verde, según calificación.
+    if (userRate==1){
       newItem.classList.add("rottenTomato");
     }
     if (userRate==5){
